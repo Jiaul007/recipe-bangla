@@ -1,0 +1,1019 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+    /*    font-family: 'Overpass', sans-serif;*/
+}
+
+::selection {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--black);
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--yellow);
+}
+
+:root {
+    --yellow: #ffc901;
+    --white: #ffffff;
+    --grey: #444444;
+    --black: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--black);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white)
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    color: var(--white);
+}
+
+p {
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.btn {
+    width: 20rem;
+    font-size: 3rem;
+    padding: 0.5rem 2.5rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    border-radius: 0.8rem;
+    position: relative;
+    border: none;
+    outline: none;
+    z-index: 111;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: var(--white);
+    left: 0;
+    bottom: 0;
+    border-radius: .7rem;
+    -webkit-transition: linear 0.5s;
+    -o-transition: linear 0.5s;
+    transition: linear 0.5s;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+
+/*header section is start here*/
+header {
+    background-image: url(img/headerimg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.topspace {
+    width: 100%;
+    height: 5rem;
+}
+
+
+nav .open {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-size: 3rem;
+    color: var(--white);
+    display: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.meiadianavlogo {
+    position: absolute;
+    top: 0.4rem;
+    left: 5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.meiadianavlogo img {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: var(--grey);
+    padding: 1rem 0;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 222222;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 4rem;
+}
+
+nav ul li {
+    margin-right: 4rem;
+
+}
+
+nav ul .active a {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+nav ul .active a:hover {
+    color: var(--black);
+}
+
+nav ul li a {
+    font-size: 2rem;
+    padding: 0 1rem;
+
+}
+
+nav ul li a:hover {
+    color: var(--yellow);
+}
+
+nav .logo {
+    width: 10rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+nav .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+/*header content design here*/
+header .headercontent {
+    width: 50%;
+    height: auto;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 2rem 10rem 0 0;
+}
+
+header .headercontent > h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: right;
+    letter-spacing: 0.1rem;
+    margin-top: 8rem;
+}
+
+header .headercontent a {
+    font-size: 2rem;
+    color: var(--yellow);
+    margin-bottom: 5rem;
+}
+
+header .headercontent .headerlogo {
+    width: 23rem;
+    margin: 4rem 0;
+    text-align: end;
+}
+
+
+.headerbottomcontent {
+    background: linear-gradient(to left, #ffffff26 50%, #00000096 80%);
+    width: 25rem;
+    text-align: center;
+
+}
+
+.headerbottomcontent h1 {
+    font-size: 3.2rem !important;
+    word-spacing: 0.5rem !important;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.headerbottomcontent a {
+    font-size: 2rem !important;
+    display:
+}
+
+
+/*about section is start here------------*/
+.about {
+    background-image: url(img/secondheader.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.aboutContent {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutContent h1 {
+    margin-top: 14rem;
+    font-size: 4rem;
+    position: relative;
+}
+
+.aboutContent h1::before {
+    content: '📈';
+    position: absolute;
+    transform: rotate(50deg);
+    margin-left: -5rem;
+}
+
+.aboutContent h1::after {
+    content: '📈';
+    position: absolute;
+    margin-left: 1rem;
+    font-size: 4rem;
+    transform: rotate(-50deg);
+}
+
+.aboutContent span {
+    color: var(--yellow);
+    font-family: cursive;
+}
+
+.aboutContent p {
+    font-size: 1.6rem;
+    text-align: justify;
+    width: 60%;
+    line-height: 1.4;
+    margin: 4rem 0;
+    z-index: 1111;
+}
+
+.aboutContent .visitbookh1 h2 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    color: var(--white);
+    word-spacing: .5rem;
+    z-index: 111;
+}
+
+.aboutContent .visitbookh1 > h2 > a {
+    color: var(--yellow);
+}
+
+
+/*food quality section is start here*/
+
+.foodquality {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.foodquality img {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.foodquality .foodContent {
+    position: absolute;
+    right: 3rem;
+    top: 16rem;
+    text-transform: uppercase;
+    margin-right: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foodContent > h1 {
+    font-size: 4.6rem;
+    font-weight: normal;
+}
+
+.foodContent h1::before {
+    content: '📈';
+    position: absolute;
+    transform: rotate(50deg);
+    margin-left: -6rem;
+    font-size: 4rem;
+}
+
+
+
+.foodContent > h2 {
+    font-size: 3.3rem;
+    margin-top: 3rem;
+    color: var(--white);
+    font-weight: normal;
+    line-height: 1.3;
+    letter-spacing: .3rem;
+    z-index: 1111;
+    text-align: right;
+}
+
+.foodContent > h4 {
+    font-size: 1.8rem;
+    color: var(--yellow);
+    letter-spacing: .2rem;
+    font-weight: 200;
+    z-index: 2222;
+
+}
+
+.foodContent p {
+    font-size: 1.8rem;
+    text-transform: lowercase;
+    font-weight: 200;
+    text-align: center;
+    padding: 0 0 0 30rem;
+    width: 65%;
+    text-align: right;
+}
+
+.foodContent > p::first-letter {
+    text-transform: capitalize;
+}
+
+/*gallery section design here*/
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+.gallery h1 {
+    font-size: 3rem;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding-top: 3rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.gallery h1::before {
+    content: '📈';
+    position: absolute;
+    transform: rotate(50deg);
+    margin-left: -6rem;
+    font-size: 4.1rem;
+}
+
+.gallery h1::after {
+    content: '📈';
+    position: absolute;
+    margin-left: 1rem;
+    font-size: 4rem;
+    transform: rotate(-50deg);
+}
+
+
+.gallery img {
+    width: 100%;
+    padding: 0 4rem;
+    position: relative;
+}
+
+/*contactForm design here-------------------*/
+
+.contactForm {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(img/fivthheader.png);
+    background-size: cover;
+}
+
+.contactForm h1 {
+    text-align: center;
+    padding-top: 9rem;
+    font-size: 4rem;
+    word-spacing: 1rem;
+    font-weight: normal;
+}
+
+.contactForm p {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--yellow);
+    margin: 1rem 0;
+}
+
+.inputbox {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputleftbox {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.input form {
+    margin: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.input form #people {
+    width: 25rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 0.1rem solid var(--yellow);
+    color: var(--white);
+    outline: none;
+    border-radius: .5rem;
+}
+
+.input form #people option {
+    color: var(--black);
+    background: var(--yellow);
+}
+
+.input form level {
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+.input form input {
+    width: 25rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 0.1rem solid var(--yellow);
+    padding: .1rem 1.5rem;
+    outline: none;
+    border-radius: .5rem;
+}
+
+.inputrightbox {
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.button {
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.bookingnow {
+    width: 100%;
+    height: 100vh;
+}
+
+.bookingnow img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*testimonials section is start-----------------*/
+.testmonials {
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/seventhheader.png);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testmonials p {
+    margin: 2rem 0;
+    font-size: 2rem;
+    width: 50%;
+    font-weight: 200;
+}
+
+.testmonials a {
+    color: var(--yellow);
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+/*blog section is design here*/
+.blog {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/eightheader.png);
+
+}
+
+.blog .enjoymeal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    padding: 0 0 0 4rem;
+}
+
+.blog .enjoymeal h1 {
+    margin-top: 25rem;
+    font-size: 4rem;
+    font-weight: 300 !important;
+    color: var(--yellow);
+}
+
+.blog .enjoymeal p {
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 3rem 0;
+    width: 45%;
+    text-align: left;
+}
+
+.blog .enjoymeal a {
+    color: var(--yellow);
+    font-size: 3rem;
+}
+
+/*fotter section is start here-----------*/
+
+footer {
+    width: 100%;
+    height: 60vh;
+    background-image: url(img/fivthheader.png);
+
+}
+
+footer .footerlogo {
+    width: 30rem;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+footer .fotterlogo img {
+    width: 50%;
+}
+
+footer .link {
+    width: 60%;
+    margin: 0 auto;
+}
+
+footer .link .ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+
+footer .link .ul .li a {
+    font-size: 1.5rem;
+}
+
+footer .link .ul .li a:hover {
+    color: var(--yellow);
+}
+
+.sociallink {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sociallink i {
+    font-size: 3rem;
+    margin: 0 1rem;
+    background: var(--white);
+    color: var(--black);
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 4rem;
+}
+
+.sociallink i:hover {
+    background: var(--yellow);
+}
+
+/*top design here ----------------------*/
+
+.topbtn {
+    background: var(--yellow);
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 4rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    position: fixed;
+    cursor: pointer;
+
+}
+
+.topbtn a {
+    color: var(--black);
+    font-size: 2rem;
+    transition: .5s linear;
+}
+
+.topbtn:hover {
+    background: var(--black);
+}
+
+.topbtn:hover a {
+    color: var(--white);
+}
+
+
+
+
+@media screen and (max-width:890px) {
+
+    /*food quality section is start here*/
+
+    .foodquality .foodContent {
+        margin-right: 2rem;
+    }
+
+    .foodContent > h1 {
+        font-size: 4.6rem;
+    }
+
+    .foodContent > h2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        letter-spacing: .2rem;
+    }
+
+    .foodContent p {
+        font-size: 1.8rem;
+        padding: 0 0 0 10rem;
+        width: 70%;
+        text-align: right;
+    }
+
+
+
+    /*about section is start here------------*/
+
+    .aboutContent {
+        width: 50%;
+    }
+
+    .aboutContent h1 {
+        margin-top: 9rem;
+    }
+
+    .aboutContent p {
+        width: 80%;
+        margin: 2.5rem 0;
+    }
+
+    .aboutContent .visitbookh1 h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .button {
+        margin-top: 0rem;
+    }
+
+    .blog .enjoymeal p {
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 3rem 0 1rem 0;
+        width: 45%;
+        text-align: left;
+    }
+
+}
+
+
+
+@media screen and (max-width:640px) {
+    /*contactForm design here-------------------*/
+
+    .contactForm {
+        height: 125vh;
+    }
+
+    .contactForm h1 {
+        padding: 2rem 0 0 0;
+    }
+
+
+    .inputbox {
+        width: 90%;
+        display: block;
+    }
+
+    .inputleftbox {
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .inputrightbox {
+        width: 100%;
+        align-items: center;
+    }
+
+    .button {
+        margin-top: 2rem;
+    }
+
+    .button .btn {
+        width: 25.5rem;
+    }
+
+
+    /*    nav section start here---------*/
+
+    nav ul {
+        margin-left: 1rem;
+    }
+
+    .meiadianavlogo {
+        left: 1rem;
+    }
+
+
+    /*header content design here*/
+    header .headercontent {
+        width: 80%;
+        margin-right: 3rem;
+    }
+
+    header .headercontent > h1 {
+        font-size: 3rem;
+    }
+
+    header .headercontent a {
+        font-size: 2rem;
+    }
+
+    .headerbottomcontent {
+        width: 28rem;
+
+    }
+
+    .headerbottomcontent h1 {
+        font-size: 3rem !important;
+    }
+
+    .headerbottomcontent a {
+        font-size: 3rem !important;
+    }
+
+
+    /*about section is start here------------*/
+
+    .aboutContent {
+        width: 90%;
+    }
+
+    .aboutContent h1 {
+        font-size: 3.5rem;
+    }
+
+    .aboutContent h1::before {
+        margin-left: -7rem;
+
+    }
+
+    .aboutContent h1::after {
+        margin-left: 2rem;
+    }
+
+    .aboutContent p {
+        font-size: 1.6rem;
+        text-align: justify;
+        width: 70%;
+        margin: 0 0 1rem 0;
+    }
+
+    .aboutContent .visitbookh1 h2 {
+        font-size: 2.5rem;
+        margin-top: 0rem;
+    }
+
+    /*food quality section is start here*/
+
+    .foodquality .foodContent {
+        width: 100%;
+    }
+
+    .foodContent > h1 {
+        font-size: 3rem;
+
+    }
+
+    .foodContent h1::before {
+        margin-left: -7rem;
+    }
+
+    .foodContent h1::after {
+        display: none;
+    }
+
+
+    .foodContent > h2 {
+        font-size: 2rem;
+        margin-top: 0rem;
+        text-align: right;
+    }
+
+    .foodContent > h4 {
+        font-size: 2rem;
+    }
+
+    .foodContent > p {
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        padding: 0;
+        width: 80%;
+        ;
+    }
+
+    .gallery h1 {
+        font-size: 4rem;
+    }
+
+    .gallery h1::before {
+        margin-left: -7rem;
+    }
+
+    .gallery h1::after {
+        margin-left: 3rem;
+    }
+
+
+    .gallery img {
+        padding: 0 1rem;
+    }
+
+    /*testimonials section is start-----------------*/
+    .testmonials {
+        height: 50vh;
+    }
+
+    .testmonials p {
+        font-size: 1.8rem;
+        width: 60%;
+
+    }
+
+    .testmonials a {
+        font-size: 2.6rem;
+        margin-top: 1rem;
+    }
+
+    .blog {
+        height: 80vh;
+        display: flex;
+    }
+
+    .blog .enjoymeal {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .blog .enjoymeal h1 {
+        margin-top: 5rem;
+    }
+
+    .blog .enjoymeal p {
+        width: 90%;
+    }
+
+    .footerlogo img {
+        width: 70%;
+        margin-left: 5rem;
+    }
+}
+
+
+
+/*@media queary is start heere--------------------------------------------- */
+
+@media screen and (max-width:1035px) {
+    nav {
+        padding: 4rem 0;
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0rem;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+
+    }
+
+    nav ul li a {
+        font-size: 2.3rem;
+    }
+
+
+    nav .logo {
+        display: none;
+    }
+
+    nav .open {
+        display: block;
+    }
+
+    .meiadianavlogo img {
+        display: block;
+    }
+
+}
